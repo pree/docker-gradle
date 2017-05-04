@@ -40,7 +40,6 @@ RUN set -o errexit -o nounset \
 	&& chown -R gradle:gradle /home/gradle
 
 # Create Gradle volume
-USER gradle
 VOLUME "/home/gradle/.gradle"
 WORKDIR /home/gradle
 
